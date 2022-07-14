@@ -1,0 +1,24 @@
+{
+  "colors.filetypes": ["*"],
+  "list.signOffset": 1,
+  "list.previousKeymap": "<C-p>",
+  "list.nextKeymap": "<C-n>",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "markdown",
+    "json",
+    "go",
+    "lua",
+    "vim"
+  ],
+
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.work", "go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
+    }
+  }
+}
